@@ -124,7 +124,7 @@ exports.Prisma.UserScalarFieldEnum = {
   id: 'id',
   externalId: 'externalId',
   attributes: 'attributes',
-  createAt: 'createAt',
+  createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
 

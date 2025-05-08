@@ -892,14 +892,14 @@ export namespace Prisma {
   export type UserMinAggregateOutputType = {
     id: number | null
     externalId: string | null
-    createAt: Date | null
+    createdAt: Date | null
     updatedAt: Date | null
   }
 
   export type UserMaxAggregateOutputType = {
     id: number | null
     externalId: string | null
-    createAt: Date | null
+    createdAt: Date | null
     updatedAt: Date | null
   }
 
@@ -907,7 +907,7 @@ export namespace Prisma {
     id: number
     externalId: number
     attributes: number
-    createAt: number
+    createdAt: number
     updatedAt: number
     _all: number
   }
@@ -924,14 +924,14 @@ export namespace Prisma {
   export type UserMinAggregateInputType = {
     id?: true
     externalId?: true
-    createAt?: true
+    createdAt?: true
     updatedAt?: true
   }
 
   export type UserMaxAggregateInputType = {
     id?: true
     externalId?: true
-    createAt?: true
+    createdAt?: true
     updatedAt?: true
   }
 
@@ -939,7 +939,7 @@ export namespace Prisma {
     id?: true
     externalId?: true
     attributes?: true
-    createAt?: true
+    createdAt?: true
     updatedAt?: true
     _all?: true
   }
@@ -1034,7 +1034,7 @@ export namespace Prisma {
     id: number
     externalId: string
     attributes: JsonValue
-    createAt: Date
+    createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
     _avg: UserAvgAggregateOutputType | null
@@ -1061,7 +1061,7 @@ export namespace Prisma {
     id?: boolean
     externalId?: boolean
     attributes?: boolean
-    createAt?: boolean
+    createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
 
@@ -1069,7 +1069,7 @@ export namespace Prisma {
     id?: boolean
     externalId?: boolean
     attributes?: boolean
-    createAt?: boolean
+    createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
 
@@ -1077,7 +1077,7 @@ export namespace Prisma {
     id?: boolean
     externalId?: boolean
     attributes?: boolean
-    createAt?: boolean
+    createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
 
@@ -1085,11 +1085,11 @@ export namespace Prisma {
     id?: boolean
     externalId?: boolean
     attributes?: boolean
-    createAt?: boolean
+    createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "externalId" | "attributes" | "createAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "externalId" | "attributes" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
 
   export type $UserPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "User"
@@ -1098,7 +1098,7 @@ export namespace Prisma {
       id: number
       externalId: string
       attributes: Prisma.JsonValue
-      createAt: Date
+      createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
     composites: {}
@@ -1526,7 +1526,7 @@ export namespace Prisma {
     readonly id: FieldRef<"User", 'Int'>
     readonly externalId: FieldRef<"User", 'String'>
     readonly attributes: FieldRef<"User", 'Json'>
-    readonly createAt: FieldRef<"User", 'DateTime'>
+    readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
     
@@ -1912,7 +1912,7 @@ export namespace Prisma {
     id: 'id',
     externalId: 'externalId',
     attributes: 'attributes',
-    createAt: 'createAt',
+    createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
 
@@ -2036,7 +2036,7 @@ export namespace Prisma {
     id?: IntFilter<"User"> | number
     externalId?: StringFilter<"User"> | string
     attributes?: JsonFilter<"User">
-    createAt?: DateTimeFilter<"User"> | Date | string
+    createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
   }
 
@@ -2044,7 +2044,7 @@ export namespace Prisma {
     id?: SortOrder
     externalId?: SortOrder
     attributes?: SortOrder
-    createAt?: SortOrder
+    createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
@@ -2055,7 +2055,7 @@ export namespace Prisma {
     OR?: UserWhereInput[]
     NOT?: UserWhereInput | UserWhereInput[]
     attributes?: JsonFilter<"User">
-    createAt?: DateTimeFilter<"User"> | Date | string
+    createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
   }, "id" | "externalId">
 
@@ -2063,7 +2063,7 @@ export namespace Prisma {
     id?: SortOrder
     externalId?: SortOrder
     attributes?: SortOrder
-    createAt?: SortOrder
+    createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
     _avg?: UserAvgOrderByAggregateInput
@@ -2079,14 +2079,14 @@ export namespace Prisma {
     id?: IntWithAggregatesFilter<"User"> | number
     externalId?: StringWithAggregatesFilter<"User"> | string
     attributes?: JsonWithAggregatesFilter<"User">
-    createAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
+    createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
 
   export type UserCreateInput = {
     externalId: string
     attributes: JsonNullValueInput | InputJsonValue
-    createAt?: Date | string
+    createdAt?: Date | string
     updatedAt?: Date | string
   }
 
@@ -2094,14 +2094,14 @@ export namespace Prisma {
     id?: number
     externalId: string
     attributes: JsonNullValueInput | InputJsonValue
-    createAt?: Date | string
+    createdAt?: Date | string
     updatedAt?: Date | string
   }
 
   export type UserUpdateInput = {
     externalId?: StringFieldUpdateOperationsInput | string
     attributes?: JsonNullValueInput | InputJsonValue
-    createAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -2109,7 +2109,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     externalId?: StringFieldUpdateOperationsInput | string
     attributes?: JsonNullValueInput | InputJsonValue
-    createAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -2117,14 +2117,14 @@ export namespace Prisma {
     id?: number
     externalId: string
     attributes: JsonNullValueInput | InputJsonValue
-    createAt?: Date | string
+    createdAt?: Date | string
     updatedAt?: Date | string
   }
 
   export type UserUpdateManyMutationInput = {
     externalId?: StringFieldUpdateOperationsInput | string
     attributes?: JsonNullValueInput | InputJsonValue
-    createAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -2132,7 +2132,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     externalId?: StringFieldUpdateOperationsInput | string
     attributes?: JsonNullValueInput | InputJsonValue
-    createAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -2200,7 +2200,7 @@ export namespace Prisma {
     id?: SortOrder
     externalId?: SortOrder
     attributes?: SortOrder
-    createAt?: SortOrder
+    createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
@@ -2211,14 +2211,14 @@ export namespace Prisma {
   export type UserMaxOrderByAggregateInput = {
     id?: SortOrder
     externalId?: SortOrder
-    createAt?: SortOrder
+    createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
   export type UserMinOrderByAggregateInput = {
     id?: SortOrder
     externalId?: SortOrder
-    createAt?: SortOrder
+    createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
