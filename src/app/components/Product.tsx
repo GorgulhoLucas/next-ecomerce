@@ -1,5 +1,6 @@
 import { ProductType } from "@/types/ProductType"
 import ProductImage from "./ProductImage";
+import { formatPrice } from "@/lib/utils";
 
 ;
 type ProductProps = {
@@ -14,10 +15,10 @@ export default function Product({product} : ProductProps){
             </div>
             <div className='flex justify-between font-bold my-3'>
                 <p className='w-40 truncate'>
-                    {product.title}
+                    {product.name}
                 </p>
                 <p className='text-md text-tea-300'>
-                    {product.price}
+                    {formatPrice(product.price)}
                 </p>
 
                 </div>
