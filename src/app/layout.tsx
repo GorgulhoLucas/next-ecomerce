@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavBar from "./components/NavBar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ptBR } from "@clerk/localizations";
+import Hydrate from "./components/Hydrate";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,11 +33,16 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-        <NavBar/>
+          <Hydrate>
 
-        <main className='bg-slate-700 h-screen p-16'>
-          {children}
-        </main>
+            <NavBar/>
+            <main className='bg-slate-700 h-screen p-16'>
+              {children}
+            </main>
+            
+
+          </Hydrate>
+
 
         </body>
       </html>
