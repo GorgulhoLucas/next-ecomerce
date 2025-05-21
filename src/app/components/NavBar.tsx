@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {SignedIn, SignedOut} from "@clerk/nextjs";
 import {SignInButton, UserButton} from "@clerk/nextjs";
-import Cart from "./Cart";
+import Cart from "./cart/Cart";
 
 function Navbar() {
     return(

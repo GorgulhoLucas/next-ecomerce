@@ -1,4 +1,4 @@
-import AddCart from "@/app/components/AddCart";
+import AddCart from "@/app/components/cart/AddCart";
 import ProductImage from "@/app/components/ProductImage";
 import { formatPrice } from "@/lib/utils";
 import Stripe from "stripe";
