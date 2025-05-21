@@ -125,7 +125,8 @@ exports.Prisma.UserScalarFieldEnum = {
   externalId: 'externalId',
   attributes: 'attributes',
   createAt: 'createAt',
-  updateAt: 'updateAt'
+  updateAt: 'updateAt',
+  stripeCustomerId: 'stripeCustomerId'
 };
 
 exports.Prisma.SortOrder = {
@@ -146,6 +147,11 @@ exports.Prisma.JsonNullValueFilter = {
   DbNull: Prisma.DbNull,
   JsonNull: Prisma.JsonNull,
   AnyNull: Prisma.AnyNull
+};
+
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
 };
 
 
